@@ -16,3 +16,4 @@ class shangxue():
 with shangxue() as f:  # f是__enter__的返回值
     print('代码执行中')
     print(f)
+
