@@ -1,13 +1,6 @@
 # @Time : 2020/3/30 18:40 
 # @Author : tongyue
 
-############### 案例1 ###################
-a = 1
-b = a if not a else None
-print(b) # 结果是None
-
-############### 案例2 ###################
-
 books =[
     {
         "name":"kongzi",
@@ -19,10 +12,20 @@ books =[
     }
 ]
 
-def updateData(book):
-    book['name'] = book['name']+"_new"
-    book['publisher'] += "_new"
-    return book
+#遍历list和dict
+for book in books:
+    for key,value in book.items():
+        print("key shi:{},    zhi shi:{}".format(key,value))
 
-books2 = [updateData(book) for book in books] #批量处理 生成新的list 这里的book可以写成函数
-print(books2)
+
+# 遍历set
+setData = {11,22,33,44}
+for data in setData:
+    print(data)
+
+#list去重 用set
+listData = [1,2,2,3,4]
+listSetData = set(listData)
+listData = list(listSetData)
+print(listData)
+
