@@ -20,3 +20,7 @@ class Student:
 stu = Student('daniu',20)
 stu.age = 20 #表示要调用 setter方法，20传给参数age,age加工+20，传给__age__
 print(stu.age)
+
+print(hasattr(stu,"age")); #判断是否有属性age
+setattr(stu,"age",50) #经过setter方法，50+20等于70
+print(stu.age)
