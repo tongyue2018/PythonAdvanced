@@ -29,3 +29,15 @@ listSetData = set(listData)
 listData = list(listSetData)
 print(listData)
 
+#两个字典合并
+dict1 = {
+        "name":"kongzi1",
+        "publisher":"beijing1"
+    }
+dict2={
+        "name":"mengzi2",
+        "publisher":"shanghai2"
+    }
+
+dict1.update(dict2)
+print(dict1)
