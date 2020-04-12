@@ -16,6 +16,8 @@ print(valuesB)
 #常用，作用于列表
 valuesA = ','.join(valuesB)
 print(valuesA)
+#字符转化成list
+print(valuesA.split(','))
 
 #作用不大
 valuesC = ['%s'* 5]

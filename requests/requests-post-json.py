@@ -1,7 +1,7 @@
 import requests,json
 
 
-urlAddress = 'http://127.0.0.1:5000/regist'
+urlAddress = 'http://47.107.58.164:5000/regist'
 
 params = {
     'username':'mirTong',
@@ -18,8 +18,12 @@ headers = {
     "headerName":"header"
 }
 
-#json提交，注意:1.json需要序列化才被python识别,  2."Content-Type": "application/json"
-responseDataJson = requests.post(url=urlAddress,data=json.dumps(jsonData),headers=headers)
+#方法一、json提交，注意:1.json需要序列化才被python识别,  2."Content-Type": "application/json"
+# responseDataJson = requests.post(url=urlAddress,data=json.dumps(jsonData),headers=headers)
+
+#方法二、json=jsonData，headers=headers Content-Type": "application/json"
+responseDataJson = requests.post(url=urlAddress,json=jsonData,headers=headers)
+
 
 #直接打印中文乱码，json序列化可以解决, 简介的方法是responseDataJson.json()
 # resultdata = responseDataJson.text
