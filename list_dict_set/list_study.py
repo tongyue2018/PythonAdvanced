@@ -32,3 +32,10 @@ listData[0]='daniu1'
 print(listData)
 
 
+print('----------复制list------------')
+listDataNew = listData[:]
+print(listDataNew)
+
+print('----------复制list一部分------------')
+listDataNew = listData[0:2]
+print(listDataNew)
