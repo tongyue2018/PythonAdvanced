@@ -25,6 +25,6 @@ def updateData(book):
     book['name'] = book['name']+"_new"
     book['publisher'] += "_new"
     return book
-
+#列表推导式 [updateData(book) for book in books if book.xx==xx]
 books2 = [updateData(book) for book in books] #批量处理 生成新的list 这里的book可以写成函数
 print(books2)
