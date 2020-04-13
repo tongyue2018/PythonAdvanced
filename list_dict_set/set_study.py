@@ -19,7 +19,6 @@ print('----------删除------------')
 a.remove(5)
 print(a)
 
-
 print('----------#集合去重------------')
 set1={1,2,3,4,5,2}
 print("set1去重后：",set1)
@@ -33,3 +32,9 @@ print('----------字典的key转化为set------------')
 set4 = set({'name':'zhangsan','age':20,'weigh':50})
 print(set4,type(set4))
 
+print('--------并集、交集、差集------------')
+a = {1,2,3}
+b = {2,5,6}
+print(a.union(b))
+print(a.intersection(b))
+print(a.difference(b))
