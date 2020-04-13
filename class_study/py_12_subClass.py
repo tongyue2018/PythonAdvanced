@@ -15,3 +15,4 @@ if __name__ == '__main__':#自己调用时True,被引用时为False
     print("子类age:" + str(niniDog.age))
     print("子类height:" + str(niniDog.height))
 
+_
