@@ -1,0 +1,87 @@
+<input>
+<head>
+    <meta charset='UTF-8'>
+    <title>三兄弟的故事</title>
+
+<!--css选择器，根据标签明I帧-->
+    <style>
+        p{color:red}
+    </style>
+
+    <style>
+        footer p{color:red} #隔代，也属于后代
+    </style>
+
+<!--css选择器，根据ID,ID前面有#，优先级不容标签选择器-->
+    <style>
+        #head-paragraph{color: #192864}
+    </style>
+
+<!--css选择器，根据class属性,class前面有.，优先级不容标签选择器-->
+<!--class="vegetable good" 表示兼顾vegetable和good2个属性，所以也会变-->
+    <style>
+        .vegetable{color: #1f640f
+        }
+    </style>
+
+<!--css选择器，根据tag和class组合-->
+    <style>
+        span.meet{color: #ffb0c1
+        }
+    </style>
+
+
+</head>
+
+
+<div style=""  id="head-paragraph">
+    <h3>This is a heading</h3>
+    <p>This is a paragraph</p>
+</div>
+
+<input name = "wenben1" type = "text"/>
+<button name="button1">按钮1</button>
+<input name = "wenben2" type = "text"/>
+<button name="button2">按钮2</button>
+
+<button name="button3">按钮3-1</button>
+<button name="button3">按钮3-2</button>
+
+<div class="cheese"><span>Cheddar</span></div>
+<div class="cheese"><span>Gouda</span></div>
+
+<a href="http://www.baidu.com" id="baidulink1">转到百度</a>
+<a href="http://www.baidu.com" id="baidulink2">转到百度</a>
+
+<footer>
+    <div>
+        <p>footer p</p>
+    </div>
+</footer>
+
+<div id="food" style="margin-top:10px;color:#3c8aff">
+    <span class="vegetable good">黄瓜</span>
+    <span class="meet">牛肉</span>
+    <p class="vegetable">南瓜</p>
+    <p class="vegetable">青菜</p>
+</div>
+
+<div id="shui" style="margin-top:10px;color:red">
+    <span class="vegetable good">黄瓜shui</span>
+    <span class="meet">牛肉shuishui</span>
+    <p class="vegetable">南瓜shui</p>
+    <p class="vegetable">青菜shui</p>
+</div>
+
+<select id="choose_car">
+    <option value="volvo">沃尔沃</option>
+    <option value="corolla">卡罗拉</option>
+    <option value="fiat">菲亚特</option>
+    <option value="audi">奥迪</option>
+</select>
+
+<iframe src="http://www.baidu.com"></iframe>
+<iframe src="http://www.baidu.com"></iframe>
+
+</body>
+</html>
