@@ -3,7 +3,7 @@ import sys
 sys.path.append('../') #效果和上面绝对路径一致
 print(sys.path)
 
-from 类.py_12_subClass import MDog
+from py_12_subClass import MDog
 class LDog(MDog):
     def __init__(self,name,age,height,width):
         super().__init__(name,age,height)
