@@ -1,9 +1,18 @@
 
-#增强版格式化输出功能，2种写法
+listData = ["daniu",100]
+dictData = {
+    "name":"wangxiaoming",
+    "age":20
+}
+
+#增强版格式化输出功能，4种写法
 name = '大牛'
 age = 10
 print('你是{name},你的年龄是{age}'.format(name=name,age=age))
 print('你是{},你的年龄是{}'.format(name,age))
+print('你是{name},你的年龄是{age}'.format(**dictData))
+print('你是{0},你的年龄是{1}'.format(*listData))
+
 
 
 #精准控制格式化输出  %+-5s  %+-5d %+-5.5f  8进制：%+-5.5o  16进制：%+-5.5x
