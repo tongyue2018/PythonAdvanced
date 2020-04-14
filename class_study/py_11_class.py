@@ -16,8 +16,6 @@ class Dog():
 if __name__ == '__main__':#自己调用时True,被引用时为False
     myDog = Dog('大牛', 20)
     print("父类名字:" + myDog.getName("123"))
-    print(myDog.getName("----附加信息"))
-
 # if __name__ == '__main__': 同时适用于函数，也可以防止测试代码被调用 引发生产bug
 
 
