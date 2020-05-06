@@ -18,5 +18,5 @@ data1 = {
         "name":"daniu",
         "age":"20"
 }
-with open('../data/json.txt','w',encoding="utf-8") as f:
+with open('../../data/json.txt', 'w', encoding="utf-8") as f:
     f.write(json.dumps(data,indent=2))
