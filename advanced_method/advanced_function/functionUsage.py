@@ -1,7 +1,7 @@
 
 #普通函数
 def oddfn(x):
-    return x if (x == 2) else None
+    return x if (x == 2) else False
 
 #anonymous function匿名函数  lambda
 
