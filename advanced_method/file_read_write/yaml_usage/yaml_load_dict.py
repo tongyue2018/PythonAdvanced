@@ -4,8 +4,8 @@ import yaml
 
 # 转化成字典，注意a: 1 冒号后面有空格
 yaml_dict_data = yaml.load("""
-a: 1
-
+- a: 1
+- b
 """,Loader=yaml.FullLoader)
 
 print(yaml_dict_data)
