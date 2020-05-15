@@ -15,8 +15,8 @@ ws1.title = "range names"
 listData = ['a','b','c']
 
 for row in range(1, 40):
-    # ws1.append(range(600))
-    ws1.append(listData)
+    ws1.append(range(600))
+    # ws1.append(listData)
 
 ws2 = wb.create_sheet(title="Pi")
 
