@@ -1,4 +1,4 @@
-
+# update
 print("元组=======================================")
 a = tuple()
 a = ('3-等待元素、frame、css选择+2','a','abc',['c','d','efg'])
@@ -14,3 +14,5 @@ print(type(b))
 #如下定义b才是元组
 b=(1,)
 print(type(b))
+
+# update

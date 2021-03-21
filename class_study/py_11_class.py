@@ -22,3 +22,4 @@ if __name__ == '__main__':#自己调用时True,被引用时为False
 # 静态方法、静态变量调用，直接Dog.a 、 Dog.abc()
 # 静态方法 参数里面不必要有self
 # 动态方法 参数里面一定要有self
+# update
